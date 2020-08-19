@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/view_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About App"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/welcome"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            style="@style/TextViewRegularBlack"
+            android:text="@string/app_name"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/appversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            style="@style/TextViewDate"
+            android:text="Version 1.0"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

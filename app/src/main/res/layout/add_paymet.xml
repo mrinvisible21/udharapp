@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_greyish"
+    tools:context=".AddPaymet">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appcolor"
+            app:titleTextAppearance="@style/TitleBarTextAppearance"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/login_page_icon_bg"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_amount_title"
+                    android:padding="10dp"
+                    android:background="@color/appcolor"/>
+
+                <EditText
+                    android:id="@+id/title"
+                    android:hint="Enter Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/login_page_icon_bg"
+                    android:padding="10dp"
+                    style="@style/TextViewRegularNormal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_page_icon_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_paid_amount"
+                    android:padding="10dp"
+                    android:background="@color/appcolor"/>
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:hint="Enter Paying Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_page_icon_bg"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="10"
+                    style="@style/TextViewRegularNormal"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_page_icon_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_end_date"
+                    android:padding="10dp"
+                    android:background="@color/appcolor"/>
+
+                <TextView
+                    android:id="@+id/enddate"
+                    style="@style/TextViewRegularNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_page_icon_bg"
+                    android:hint="Enter Receiving Date"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/addpayment"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:layout_anchorGravity="bottom|center"
+                android:background="@drawable/btnbg"
+                android:textColor="@color/White"
+                android:layout_margin="15dp"
+                android:text="Add Payment"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

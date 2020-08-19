@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:background="@color/white_greyish"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/admindashbordlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_greyish"
+                    android:fitsSystemWindows="true">
+
+                    <LinearLayout
+                        android:id="@+id/homelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/dashboard">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <android.support.v7.widget.CardView
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="2dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/total_revenue_bg"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="5dp"
+                                                    android:src="@drawable/ic_income" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Total Given Amount"
+                                                    android:textColor="@color/White"
+                                                    android:textAlignment="center"
+                                                    style="@style/TextViewLight"
+                                                    android:layout_gravity="center"/>
+
+                                                <TextView
+                                                    android:id="@+id/totalgivenamount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    android:textSize="14sp"
+                                                    style="@style/TextViewRegularNormal"
+                                                    android:textColor="@color/White"/>
+
+
+
+                                            </LinearLayout>
+
+
+
+
+                                        </android.support.v7.widget.CardView>
+
+                                        <android.support.v7.widget.CardView
+                                            android:id="@+id/totalduecard"
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="2dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:background="@drawable/total_due_bg">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="5dp"
+                                                    android:src="@drawable/ic_pendingamount"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Pending Amount"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    style="@style/TextViewLight"
+                                                    android:textColor="@color/White"/>
+
+                                                <TextView
+                                                    android:id="@+id/pendingamount"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    style="@style/TextViewRegularNormal"
+                                                    android:textColor="@color/White"/>
+
+
+
+                                            </LinearLayout>
+
+                                        </android.support.v7.widget.CardView>
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <android.support.v7.widget.CardView
+                                            android:id="@+id/totalrevenuecard"
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="2dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/total_booking_bg"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="5dp"
+                                                    android:src="@drawable/ic_total_member" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Total Members"
+                                                    android:textColor="@color/White"
+                                                    android:textAlignment="center"
+                                                    style="@style/TextViewLight"
+                                                    android:layout_gravity="center"/>
+
+                                                <TextView
+                                                    android:id="@+id/totalmembers"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    style="@style/TextViewRegularNormal"
+                                                    android:textColor="@color/White"/>
+
+
+
+                                            </LinearLayout>
+
+
+
+
+                                        </android.support.v7.widget.CardView>
+
+                                        <android.support.v7.widget.CardView
+                                            android:foreground="?android:attr/selectableItemBackground"
+                                            android:layout_width="100dp"
+                                            android:layout_height="100dp"
+                                            android:layout_weight="1"
+                                            android:layout_margin="2dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:background="@drawable/total_pending_bg">
+
+                                                <ImageView
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="30dp"
+                                                    android:layout_gravity="center"
+                                                    android:layout_margin="5dp"
+                                                    android:src="@drawable/ic_all_pending_members"/>
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Pending Members"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    style="@style/TextViewLight"
+                                                    android:textColor="@color/White"/>
+
+                                                <TextView
+                                                    android:id="@+id/pendingmembers"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:textAlignment="center"
+                                                    android:layout_gravity="center"
+                                                    style="@style/TextViewRegularNormal"
+                                                    android:textColor="@color/White"/>
+
+
+
+                                            </LinearLayout>
+
+                                        </android.support.v7.widget.CardView>
+
+                                    </LinearLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/roomcard"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_anchor="@id/dashboard"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="5dp"
+                        app:layout_anchorGravity="bottom|center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="4dp">
+
+                                <LinearLayout
+                                    android:id="@+id/todaysbookinglayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/todaybooking"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="5dp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Today's Bookings"
+                                        android:textAlignment="center"
+                                        style="@style/TextViewRegularNormal"
+                                        android:layout_gravity="center"/>
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/todaysdeliveredlayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/todaydelivered"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="5dp"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Today's Delivered"
+                                        style="@style/TextViewRegularNormal"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"/>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </android.support.design.widget.CoordinatorLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paying Members"
+                            style="@style/TextViewRegularNormal"
+                            android:textColor="@color/White"
+                            android:padding="3dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

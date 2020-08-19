@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_member"
+            android:icon="@drawable/ic_add_user"
+            android:title="Add Member" />
+        <item
+            android:id="@+id/nav_view_members"
+            android:icon="@drawable/ic_view_members"
+            android:title="My Members" />
+        <item
+            android:id="@+id/nav_pending_members"
+            android:icon="@drawable/ic_pending_members"
+            android:title="Pending Members" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_question"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/ic_android"
+            android:title="About App" />
+
+    </group>
+
+
+</menu>

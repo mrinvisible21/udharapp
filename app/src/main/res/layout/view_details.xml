@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".PendingMembers">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appcolor"
+        app:titleTextAppearance="@style/TitleBarTextAppearance"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@color/background">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contact Details"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textColor="@color/White"
+                                android:padding="3dp"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/membername"
+                                style="@style/TextViewRegularBlack"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Mobile"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/membermobile"
+                                style="@style/TextViewRegularBlack"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/appcolor"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/memberaddress"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:maxLines="3"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@color/background">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/opensans_regular"
+                                android:padding="3dp"
+                                android:text="Amount Details"
+                                android:textColor="@color/White"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Title"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/title"
+                                style="@style/TextViewRegularBlack"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Total Amount"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/total_amount"
+                                style="@style/TextViewRegularBlack"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Paid Amount"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/paid_amount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Remaining Amount"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/remaining_amount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Given Date"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/start_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Receiving Date"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/end_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Paid Date"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/paid_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:layout_weight="1"
+                                style="@style/TextViewDate"/>
+
+                            <TextView
+                                android:id="@+id/status"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                style="@style/TextViewRegularBlack"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    app:layout_anchorGravity="bottom|center"
+                    android:background="@drawable/btnbg"
+                    android:textColor="@color/White"
+                    android:layout_margin="15dp"
+                    android:visibility="visible"
+                    android:text="Update"/>
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>

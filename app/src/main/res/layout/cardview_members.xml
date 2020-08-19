@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/membername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_member_name"
+                android:drawablePadding="5dp"
+                style="@style/TextViewRegularBlack"/>
+
+            <TextView
+                android:id="@+id/membermobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_member_mobile"
+                android:drawablePadding="5dp"
+                style="@style/TextViewRegularNormal"/>
+
+            <TextView
+                android:id="@+id/memberaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_member_address"
+                android:drawablePadding="5dp"
+                style="@style/TextViewDate"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
