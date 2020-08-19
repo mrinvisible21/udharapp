@@ -31,7 +31,6 @@ public class AddMember extends AppCompatActivity {
     ProgressDialog pd;
     EditText name,mobile,address;
     Button register;
-
     SessionManager sessionManager;
     HashMap<String, String> user;
     @Override
